@@ -1,0 +1,14 @@
+<head>
+    {% load static %}
+    <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% for samp in samples %}
+        <p>{{samp.sample_title}}</p>
+        <p>{{samp.sample_published}}</p>
+        <p>{{samp.sample_content|safe}}</p>
+        <br><br>
+    {% endfor %}
+</body>
+
+<script src="{% static 'tinymce/js/prism.js' %}"></script>

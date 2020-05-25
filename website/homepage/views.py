@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Sample
 
-# Create your views here.
 def index(request):
-    return HttpResponse('This is web dev in <strong>Django</strong>!')
+    return render(request, 'homepage.html', {'samples': Sample.objects.all})
