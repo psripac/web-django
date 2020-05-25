@@ -1,2 +1,2 @@
 # web-django
-Some web dev in Django!
+Some web dev in Django
